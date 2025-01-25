@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text-Based Adventure Game</title>
+  <title>Text Adventure Game</title>
   <link rel="stylesheet" href="css/project08.css">
 </head>
 <body>
-  <div id="game-container">
-    <h1>Text-Based Adventure Game</h1>
-    <div id="story-text"></div>
-    <div id="choices"></div>
-    <div id="progress">
+  <div class="container">
+    <h1>Text Adventure Game</h1>
+    <div id="story-container">
+      <p id="story-text">Welcome to the adventure! What will you do?</p>
+      <div id="options"></div>
+    </div>
+    <div id="progress-container">
       <h2>Progress</h2>
       <div id="progress-bar"></div>
     </div>
-    <div id="controls">
-      <button id="save-button">Save Progress</button>
-      <button id="resume-button">Resume Progress</button>
-      <button id="reset-button">Restart Game</button>
-    </div>
+    <button id="reset-button">Reset Game</button>
   </div>
   <script src="js/project08.js"></script>
 </body>
