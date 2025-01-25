@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Matching Game</title>
-  <link rel="stylesheet" href="project3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Digital Clock</title>
+    <link rel="stylesheet" href="css/project01.css">
 </head>
 <body>
-  <div class="game-container">
-    <header>
-      <h1>Memory Matching Game</h1>
-      <div class="stats">
-        <p>Moves: <span id="move-count">0</span></p>
-        <p>Time: <span id="timer">0:00</span></p>
-        <button id="restart-btn">Restart</button>
-      </div>
-    </header>
-    <div class="grid" id="card-grid"></div>
-  </div>
-  <script src="project3.js"></script>
+    <div id="clock-container">
+        <div id="clock"></div>
+        <div id="settings">
+            <button id="toggle-format">Switch to 24-Hour</button>
+            <label>
+                Clock Color:
+                <input type="color" id="color-picker">
+            </label>
+            <label>
+                Font Size:
+                <input type="number" id="font-size" min="16" max="100" value="48">
+            </label>
+            <label>
+                Set Alarm:
+                <input type="time" id="alarm-time">
+                <button id="set-alarm">Set Alarm</button>
+            </label>
+            <div id="alarm-status"></div>
+        </div>
+    </div>
+    <script src="js/project01.js"></script>
 </body>
 </html>
+
