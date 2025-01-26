@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#periodicTable {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.element {
+    background-color: #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.element:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    background-color: #ffcc00;
+}
+
+.highlighted {
+    background-color: #80bfff;
+}
+
+#elementDetails {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
